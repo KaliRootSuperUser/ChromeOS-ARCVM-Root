@@ -12,8 +12,8 @@ RESET='\e[0m'
 BACKUP_PATH=/mnt/stateful_partition/arcvm_root
 KERNEL_PATH=/opt/google/vms/android
 
-KSU_VER='v1.0.5'
-KERNEL_VER='5.10.230'
+KSU_VER='1.0'
+KERNEL_VER='5.10.239'
 ARCH="$(arch)"
 
 # prevent conflict between system libraries and Chromebrew libraries
@@ -69,7 +69,7 @@ fi
 cd /tmp
 echo '[+] Downloading kernel...'
 echo "${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip"
-curl -L -'#' "https://github.com/tiann/KernelSU/releases/download/${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip" -o ksu.zip
+curl -L -'#' "https://github.com/KaliRootSuperUser/CHROME-OS-ARCVM-ROOTER/releases/download/${KSU_VER}/kernel-ARCVM-${ARCH}-${KERNEL_VER}.zip" -o ksu.zip
 
 echo '[+] Decompressing kernel...'
 mkdir -p ksu
